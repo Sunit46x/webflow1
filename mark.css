@@ -1,0 +1,453 @@
+[hide-if-collection-empty]:has(.w-dyn-empty xyz) {
+    display: none;
+}
+
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -o-font-smoothing: antialiased;
+}
+
+/* Focus state style for keyboard navigation for the focusable elements */
+*[tabindex]:focus-visible,
+input[type="file"]:focus-visible {
+    outline: 0.125rem solid #4d65ff;
+    outline-offset: 0.125rem;
+}
+
+/* Get rid of top margin on first element in any rich text element */
+.w-richtext> :not(div):first-child,
+.w-richtext>div:first-child> :first-child {
+    margin-top: 0 !important;
+}
+
+/* Get rid of bottom margin on last element in any rich text element */
+.w-richtext>:last-child,
+.w-richtext ol li:last-child,
+.w-richtext ul li:last-child {
+    margin-bottom: 0 !important;
+}
+
+/* Prevent all click and hover interaction with an element */
+.pointer-events-off {
+    pointer-events: none;
+}
+
+/* Enables all click and hover interaction with an element */
+.pointer-events-on {
+    pointer-events: auto;
+}
+
+/* Create a class of .div-square which maintains a 1:1 dimension of a div */
+.div-square::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+/* Make sure containers never lose their center alignment */
+.container-medium,
+.container-small,
+.container-large {
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+
+/* 
+  Make the following elements inherit typography styles from the parent and not have hardcoded values. 
+  Important: You will not be able to style for example "All Links" in Designer with this CSS applied.
+  Uncomment this CSS to use it in the project. Leave this message for future hand-off.
+  */
+/*
+  a,
+  .w-input,
+  .w-select,
+  .w-tab-link,
+  .w-nav-link,
+  .w-dropdown-btn,
+  .w-dropdown-toggle,
+  .w-dropdown-link {
+    color: inherit;
+    text-decoration: inherit;
+    font-size: inherit;
+  }
+  */
+/* Apply "..." after 3 lines of text */
+.text-style-3lines {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+/* Apply "..." after 2 lines of text */
+.text-style-2lines {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+/* Adds inline flex display */
+.display-inlineflex {
+    display: inline-flex;
+}
+
+/* These classes are never overwritten */
+.hide {
+    display: none !important;
+}
+
+@media screen and (max-width: 991px) {
+
+    .hide,
+    .hide-tablet {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .hide-mobile-landscape {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .hide-mobile {
+        display: none !important;
+    }
+}
+
+.margin-0 {
+    margin: 0rem !important;
+}
+
+.padding-0 {
+    padding: 0rem !important;
+}
+
+.spacing-clean {
+    padding: 0rem !important;
+    margin: 0rem !important;
+}
+
+.margin-top {
+    margin-right: 0rem !important;
+    margin-bottom: 0rem !important;
+    margin-left: 0rem !important;
+}
+
+.padding-top {
+    padding-right: 0rem !important;
+    padding-bottom: 0rem !important;
+    padding-left: 0rem !important;
+}
+
+.margin-right {
+    margin-top: 0rem !important;
+    margin-bottom: 0rem !important;
+    margin-left: 0rem !important;
+}
+
+.padding-right {
+    padding-top: 0rem !important;
+    padding-bottom: 0rem !important;
+    padding-left: 0rem !important;
+}
+
+.margin-bottom {
+    margin-top: 0rem !important;
+    margin-right: 0rem !important;
+    margin-left: 0rem !important;
+}
+
+.padding-bottom {
+    padding-top: 0rem !important;
+    padding-right: 0rem !important;
+    padding-left: 0rem !important;
+}
+
+.margin-left {
+    margin-top: 0rem !important;
+    margin-right: 0rem !important;
+    margin-bottom: 0rem !important;
+}
+
+.padding-left {
+    padding-top: 0rem !important;
+    padding-right: 0rem !important;
+    padding-bottom: 0rem !important;
+}
+
+.margin-horizontal {
+    margin-top: 0rem !important;
+    margin-bottom: 0rem !important;
+}
+
+.padding-horizontal {
+    padding-top: 0rem !important;
+    padding-bottom: 0rem !important;
+}
+
+.margin-vertical {
+    margin-right: 0rem !important;
+    margin-left: 0rem !important;
+}
+
+.padding-vertical {
+    padding-right: 0rem !important;
+    padding-left: 0rem !important;
+}
+
+/* Apply "..." at 100% width */
+.truncate-width {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Removes native scrollbar */
+.no-scrollbar {
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+/*Themes*/
+.body-websites .style-auto-color {
+    background-color: #DBEAFE;
+}
+
+.body-faint-v2 .style-auto-color {
+    background-color: var(--ui--faint-v2);
+}
+
+.body-faint .style-auto-color {
+    background-color: #FAFAF5;
+}
+
+.body-website-detail .style-auto-color {
+    background-color: #5EEAD4;
+}
+
+.button.is-tertiary:hover {
+    animation: buttonTertiary 2.8s infinite;
+}
+
+@keyframes buttonTertiary {
+
+    0%,
+    100% {
+        background-color: #5EEAD4;
+        color: #201116;
+    }
+
+    33% {
+        background-color: #6366F1;
+        /* Your first additional color */
+        color: #FFE7EF;
+    }
+
+    66% {
+        background-color: #F8568C;
+        /* Your third additional color */
+        color: #FFE7EF;
+    }
+}
+
+.gallery-listing_box:hover .gallery-listing_image-wrapper {
+    outline-color: #6366F1;
+    outline-offset: -0.25rem;
+    outline-style: solid;
+    outline-width: 0.5rem;
+}
+
+.gallery-listing_box:hover .gallery-listing_button {
+    opacity: 1;
+    transform: scale(1);
+}
+
+@media only screen and (min-width: 768px) {
+    .home-hero_website-item:nth-child(1) {
+        grid-column-start: span 1;
+        grid-row-start: span 2;
+        grid-row-end: span 2;
+    }
+}
+
+.home-hero_element-box:hover .home-hero_individual-content {
+    opacity: 1;
+    transform: translate(0px, 0rem);
+}
+
+.home-hero_element-box:hover .home-hero_individual-box {
+    opacity: 1;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calendar-input {
+    display: flex;
+    flex-direction: column;
+}
+
+.calendar-input label {
+    margin-bottom: 10px;
+}
+
+.calendar-input input[type="date"] {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.calendar-input input[type="date"]:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.calendar-input {
+    display: flex;
+    align-items: center;
+}
+
+.calendar-input input[type="date"],
+.calendar-input select {
+    margin-right: 10px;
+}
+
+/* You can apply your own color! 
+    --main-light-color is the light grey, 
+    --main-dark-color is the text
+    --main-active-color is the highlight
+    you can just add like red, or blue or any helx you like! */
+:root {
+    --main-light-color: #f3f5fb;
+    --main-dark-color: #321f59;
+    --main-active-color: #642eff;
+}
+
+.datepicker-dropdown {
+    border-radius: 8px !important;
+    border: 0 !important;
+    -webkit-box-shadow: 0px 48px 88px rgba(23, 9, 54, 0.08);
+    box-shadow: 0px 48px 88px rgba(23, 9, 54, 0.08);
+    box-sizing: border-box;
+}
+
+.datepicker-panel>ul[data-view="week"]>li {
+    background-color: var(--main-light-color);
+    color: var(--main-dark-color);
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+    height: initial;
+    padding-top: 3px;
+    margin-bottom: 4px;
+}
+
+.datepicker-panel>ul[data-view="week"]>li:hover {
+    background-color: var(--main-light-color);
+    color: var(--main-dark-color);
+    border-radius: 0px;
+}
+
+.datepicker-panel>ul[data-view="week"] li:first-child {
+    border-radius: 20px 0 0 20px;
+}
+
+.datepicker-panel>ul[data-view="week"] li:last-child {
+    border-radius: 0 20px 20px 0;
+}
+
+.datepicker-top-left::before,
+.datepicker-top-left::after {
+    display: none;
+}
+
+.datepicker-panel>ul>li.picked,
+.datepicker-panel>ul>li.highlighted,
+.datepicker-panel>ul>li.picked:hover {
+    color: var(--main-active-color);
+    background: var(--main-light-color);
+    border-radius: 8px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+li[data-view="month current"],
+li[data-view="year current"] {
+    text-align: left;
+    color: var(--main-dark-color);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    /* line-height: 24px; */
+    padding-left: 15px;
+    border-radius: 10px;
+}
+
+.datepicker-panel>ul>li:hover {
+    background: var(--main-light-color);
+    border-radius: 10px;
+}
+
+li[data-view="month current"],
+li[data-view="year current"],
+li[data-view="years current"] {
+    margin-bottom: 4px !important;
+}
+
+@media screen and (min-width: 768px) {
+    .datepicker-dropdown {
+        width: 364px;
+        padding: 12px;
+    }
+
+    .datepicker-panel>ul>li {
+        width: 48px;
+        height: 48px;
+        padding-top: 10px;
+    }
+
+    li[data-view="month next"],
+    li[data-view="year next"],
+    li[data-view="years next"] {
+        position: absolute;
+        right: 18px
+    }
+
+    li[data-view="month prev"],
+    li[data-view="year prev"],
+    li[data-view="years prev"] {
+        position: absolute;
+        right: 66px
+    }
+
+    ul[data-view="months"] li,
+    ul[data-view="years"] li {
+        padding-top: 0px;
+        width: 57px !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .datepicker-panel {
+        transform: scale(0.97);
+    }
+}

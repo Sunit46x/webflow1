@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calendar</title>
+</head>
+<body>
+
+<div class="calendar-input">
+    <input type="date" id="date" name="date">
+    <select id="time">
+        <option value="AM">AM</option>
+        <option value="PM">PM</option>
+    </select>
+</div>
+
+
+<script>
+    const handleDateSelection = (url, imageSrc) => {
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET', url, true);
+        xhr.onload = function () {
+            if (this.status === 200) {
+                console.log(this.responseText);
+                var firstDiv = document.getElementById('first');
+                if (firstDiv) {
+                    firstDiv.querySelector('img').src = imageSrc;
+                }
+            } else {
+                console.log("Some error occurred while fetching data.");
+            }
+        }
+        xhr.send();
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+        var calendarInput = document.querySelector('.calendar-input input[type="date"]');
+        var timeSelect = document.getElementById('time');
+
+        calendarInput.addEventListener("change", function (event) {
+            updateImage();
+        });
+
+        timeSelect.addEventListener("change", function (event) {
+            updateImage();
+        });
+
+        function updateImage() {
+            var selectedDate = calendarInput.value;
+            var selectedTime = timeSelect.value;
+            var url;
+            var imageSrc;
+
+            switch (selectedDate) {
+                case "2024-02-10":
+                    url = 'https://jsonplaceholder.typicode.com/todos/1/date-2024-02-10';
+                    break;
+                case "2024-02-15":
+                    url = 'https://jsonplaceholder.typicode.com/todos/1/date-2024-02-15';
+                    break;
+                case "2024-02-20":
+                    url = 'https://jsonplaceholder.typicode.com/todos/1/date-2024-02-20';
+                    break;
+                case "2024-02-25":
+                    url = 'https://jsonplaceholder.typicode.com/todos/1/date-2024-02-25';
+                    break;
+                case "2024-02-28":
+                    url = 'https://jsonplaceholder.typicode.com/todos/1/date-2024-02-28';
+                    break;
+                case "2024-03-02":
+                    url = 'https://jsonplaceholder.typicode.com/todos/1/date-2024-03-02';
+                    break;
+                // Add cases for other dates as needed
+                default:
+                    break;
+            }
+
+            // Append selected time to the website link
+            url += (selectedTime === 'AM') ? '/am' : '/pm';
+
+            // Set the image source based on the selected date and time
+            imageSrc = (selectedTime === 'AM') ?
+                getAMImage(selectedDate) :
+                getPMImage(selectedDate);
+
+            // Call handleDateSelection with the updated URL and image source
+            handleDateSelection(url, imageSrc);
+
+            var emptyDiv = document.querySelectorAll('.xyz');
+            if (emptyDiv.length > 0) {
+                emptyDiv.forEach((div) => {
+                    div.style.display = 'none';
+                });
+            }
+        }
+
+        function getAMImage(date) {
+            return 'https://via.placeholder.com/400?text=AM+' + date;
+        }
+
+        function getPMImage(date) {
+            return 'https://via.placeholder.com/400?text=PM+' + date;
+        }
+    });
+</script>
+
+</body>
+</html>

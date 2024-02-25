@@ -1,0 +1,441 @@
+<!DOCTYPE html><!--  This site was created in Webflow. https://www.webflow.com  -->
+<!--  Last Published: Tue Jan 30 2024 16:17:21 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="65831683c36417fdd55847e8" data-wf-site="656b54ed82c62b584cca65ee">
+<head>
+  <meta charset="utf-8">
+  <title>Font Gallery</title>
+  <meta content="Font Gallery" property="og:title">
+  <meta content="Font Gallery" property="twitter:title">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/togetherart.webflow.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="images/webclip.png" rel="apple-touch-icon"><!--  Sygnal Attributes 5 | HTML  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.3.4/dist/css/webflow-html.css">
+  <script defer="" src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.3.4/dist/nocode/webflow-html.js"></script>
+  <style>
+/*Hide if collection is empty*/
+[hide-if-collection-empty]:has(.w-dyn-empty) {
+  display: none;
+}
+</style>
+  <style>
+/* Default styles */
+[masonry="grid-item"] {
+  width: calc(25% - 1rem);
+  margin: 0 0.5rem 1rem 0.5rem;
+  float: left;
+}
+[masonry="grid"] {
+  margin: 0 -0.5rem 0rem -0.5rem;
+}
+/* Media query for 3 items in a row below 991px */
+@media (max-width: 991px) {
+  [masonry="grid-item"] {
+    width: calc(33.33% - 1rem);
+  }
+}
+/* Media query for 1 item in a row below 767px */
+@media (max-width: 767px) {
+  [masonry="grid-item"] {
+    width: calc(100%);
+    margin-right: 0;
+    margin-bottom: 1rem;
+    margin-left: 0;
+  }
+  [masonry="grid"] {
+    margin: 0rem;
+  }
+}
+</style>
+</head>
+<body class="body-faint">
+  <div style="opacity:0" class="page-wrapper">
+    <div class="global-styles w-embed">
+      <style>
+  * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -o-font-smoothing: antialiased;
+}
+/* Focus state style for keyboard navigation for the focusable elements */
+*[tabindex]:focus-visible,
+  input[type="file"]:focus-visible {
+   outline: 0.125rem solid #4d65ff;
+   outline-offset: 0.125rem;
+}
+/* Get rid of top margin on first element in any rich text element */
+.w-richtext > :not(div):first-child, .w-richtext > div:first-child > :first-child {
+  margin-top: 0 !important;
+}
+/* Get rid of bottom margin on last element in any rich text element */
+.w-richtext>:last-child, .w-richtext ol li:last-child, .w-richtext ul li:last-child {
+	margin-bottom: 0 !important;
+}
+/* Prevent all click and hover interaction with an element */
+.pointer-events-off {
+	pointer-events: none;
+}
+/* Enables all click and hover interaction with an element */
+.pointer-events-on {
+  pointer-events: auto;
+}
+/* Create a class of .div-square which maintains a 1:1 dimension of a div */
+.div-square::after {
+	content: "";
+	display: block;
+	padding-bottom: 100%;
+}
+/* Make sure containers never lose their center alignment */
+.container-medium,.container-small, .container-large {
+	margin-right: auto !important;
+  margin-left: auto !important;
+}
+/* 
+Make the following elements inherit typography styles from the parent and not have hardcoded values. 
+Important: You will not be able to style for example "All Links" in Designer with this CSS applied.
+Uncomment this CSS to use it in the project. Leave this message for future hand-off.
+*/
+/*
+a,
+.w-input,
+.w-select,
+.w-tab-link,
+.w-nav-link,
+.w-dropdown-btn,
+.w-dropdown-toggle,
+.w-dropdown-link {
+  color: inherit;
+  text-decoration: inherit;
+  font-size: inherit;
+}
+*/
+/* Apply "..." after 3 lines of text */
+.text-style-3lines {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+}
+/* Apply "..." after 2 lines of text */
+.text-style-2lines {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+/* Adds inline flex display */
+.display-inlineflex {
+  display: inline-flex;
+}
+/* These classes are never overwritten */
+.hide {
+  display: none !important;
+}
+@media screen and (max-width: 991px) {
+    .hide, .hide-tablet {
+        display: none !important;
+    }
+}
+  @media screen and (max-width: 767px) {
+    .hide-mobile-landscape{
+      display: none !important;
+    }
+}
+  @media screen and (max-width: 479px) {
+    .hide-mobile{
+      display: none !important;
+    }
+}
+.margin-0 {
+  margin: 0rem !important;
+}
+.padding-0 {
+  padding: 0rem !important;
+}
+.spacing-clean {
+padding: 0rem !important;
+margin: 0rem !important;
+}
+.margin-top {
+  margin-right: 0rem !important;
+  margin-bottom: 0rem !important;
+  margin-left: 0rem !important;
+}
+.padding-top {
+  padding-right: 0rem !important;
+  padding-bottom: 0rem !important;
+  padding-left: 0rem !important;
+}
+.margin-right {
+  margin-top: 0rem !important;
+  margin-bottom: 0rem !important;
+  margin-left: 0rem !important;
+}
+.padding-right {
+  padding-top: 0rem !important;
+  padding-bottom: 0rem !important;
+  padding-left: 0rem !important;
+}
+.margin-bottom {
+  margin-top: 0rem !important;
+  margin-right: 0rem !important;
+  margin-left: 0rem !important;
+}
+.padding-bottom {
+  padding-top: 0rem !important;
+  padding-right: 0rem !important;
+  padding-left: 0rem !important;
+}
+.margin-left {
+  margin-top: 0rem !important;
+  margin-right: 0rem !important;
+  margin-bottom: 0rem !important;
+}
+.padding-left {
+  padding-top: 0rem !important;
+  padding-right: 0rem !important;
+  padding-bottom: 0rem !important;
+}
+.margin-horizontal {
+  margin-top: 0rem !important;
+  margin-bottom: 0rem !important;
+}
+.padding-horizontal {
+  padding-top: 0rem !important;
+  padding-bottom: 0rem !important;
+}
+.margin-vertical {
+  margin-right: 0rem !important;
+  margin-left: 0rem !important;
+}
+.padding-vertical {
+  padding-right: 0rem !important;
+  padding-left: 0rem !important;
+}
+/* Apply "..." at 100% width */
+.truncate-width { 
+		width: 100%; 
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+/* Removes native scrollbar */
+.no-scrollbar {
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none; 
+}
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+/*Themes*/
+.body-websites .style-auto-color{
+		background-color: #DBEAFE;
+}
+.body-faint-v2 .style-auto-color{
+	background-color: var(--ui--faint-v2);
+}
+.body-faint .style-auto-color{
+	background-color: #FAFAF5;
+}
+.body-website-detail .style-auto-color{
+	background-color: #5EEAD4;
+}
+.button.is-tertiary:hover {
+    animation: buttonTertiary 2.8s infinite;
+}
+@keyframes buttonTertiary {
+    0%, 100% {
+        background-color: #5EEAD4;
+        color: #201116;
+    }
+    33% {
+        background-color: #6366F1; /* Your first additional color */
+        color: #FFE7EF;
+    }
+    66% {
+        background-color: #F8568C; /* Your third additional color */
+        color: #FFE7EF;
+    }
+}
+.gallery-listing_box:hover .gallery-listing_image-wrapper {
+  outline-color: #6366F1;
+  outline-offset: -0.25rem;
+  outline-style: solid;
+  outline-width: 0.5rem;
+}
+.gallery-listing_box:hover .gallery-listing_button {
+  opacity: 1;
+  transform: scale(1);
+}
+</style>
+    </div>
+    <div data-animation="default" class="navbar_component style-auto-color w-nav" data-easing2="ease" fs-scrolldisable-element="smart-nav" data-easing="ease" data-collapse="medium" data-w-id="378a709a-379b-9169-c776-eea928e36e97" role="banner" data-duration="400">
+      <div class="navbar_container">
+        <a href="index.html" class="navbar_logo-link w-nav-brand">
+          <div class="icon-embed-medium is--logo w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 75 20" fill="none" preserveaspectratio="xMidYMid meet" aria-hidden="true" role="img">
+              <path d="M4.97512 15.4665C4.00202 15.4665 3.21395 15.1457 2.61091 14.5042C2.00786 13.8627 1.70634 12.9823 1.70634 11.8631V6.88791H0V4.98383H0.7401C1.15127 4.98383 1.45964 4.88146 1.66522 4.67672C1.88451 4.45833 1.99416 4.15122 1.99416 3.75539V2.19937H3.9472V4.86099H6.20862V6.88791H3.9472V11.6788C3.9472 12.2384 4.08426 12.6616 4.35837 12.9482C4.63248 13.2212 5.00938 13.3577 5.48907 13.3577C5.77689 13.3577 6.01674 13.3099 6.20862 13.2144V15.2618C5.85227 15.3983 5.44111 15.4665 4.97512 15.4665Z" fill="currentColor"></path>
+              <path d="M11.9813 15.4665C11.0494 15.4665 10.1859 15.2276 9.39098 14.7499C8.60977 14.2585 7.98616 13.5965 7.52017 12.7639C7.05418 11.9313 6.82119 11.0237 6.82119 10.0409C6.82119 9.0445 7.05418 8.13682 7.52017 7.31787C7.98616 6.48526 8.60977 5.83009 9.39098 5.35236C10.1859 4.86099 11.0494 4.6153 11.9813 4.6153C12.9133 4.6153 13.7699 4.86099 14.5511 5.35236C15.346 5.83009 15.9765 6.48526 16.4425 7.31787C16.9085 8.13682 17.1415 9.0445 17.1415 10.0409C17.1415 11.0237 16.9085 11.9313 16.4425 12.7639C15.9765 13.5965 15.346 14.2585 14.5511 14.7499C13.7699 15.2276 12.9133 15.4665 11.9813 15.4665ZM11.9813 13.3782C12.5158 13.3782 13.0024 13.2348 13.441 12.9482C13.8933 12.6616 14.2496 12.2657 14.51 11.7607C14.7704 11.2557 14.9006 10.6824 14.9006 10.0409C14.9006 9.39938 14.7704 8.82611 14.51 8.32109C14.2496 7.81606 13.8933 7.42023 13.441 7.1336C13.0024 6.84696 12.5158 6.70365 11.9813 6.70365C11.4468 6.70365 10.9534 6.84696 10.5011 7.1336C10.0626 7.42023 9.71306 7.81606 9.45266 8.32109C9.19225 8.82611 9.06205 9.39938 9.06205 10.0409C9.06205 10.6824 9.19225 11.2557 9.45266 11.7607C9.71306 12.2657 10.0626 12.6616 10.5011 12.9482C10.9534 13.2348 11.4468 13.3782 11.9813 13.3782Z" fill="currentColor"></path>
+              <path d="M23.0883 19.1109C22.1426 19.1109 21.334 18.9334 20.6624 18.5785C19.9908 18.2373 19.47 17.8142 19.1 17.3092C18.7436 16.8178 18.5106 16.3332 18.401 15.8555H20.7035C20.8543 16.2104 21.1284 16.5039 21.5259 16.7359C21.937 16.9679 22.4441 17.0839 23.0472 17.0839C23.8284 17.0839 24.452 16.8656 24.918 16.4288C25.384 15.992 25.617 15.3914 25.617 14.6271V13.501H25.5142C25.3086 13.7876 24.9522 14.0879 24.4451 14.4019C23.938 14.7021 23.3487 14.8523 22.6771 14.8523C21.8411 14.8523 21.0599 14.6271 20.3335 14.1766C19.6071 13.7262 19.0314 13.112 18.6066 12.334C18.1817 11.5423 17.9693 10.6756 17.9693 9.73379C17.9693 8.79199 18.1817 7.93208 18.6066 7.15407C19.0314 6.36241 19.6071 5.74137 20.3335 5.29094C21.0599 4.84051 21.8411 4.6153 22.6771 4.6153C23.3898 4.6153 24.0066 4.77227 24.5274 5.0862C25.0619 5.40014 25.4388 5.70725 25.6581 6.00753H25.7609L26.1926 4.86099H27.8784V14.6066C27.8784 15.9852 27.4467 17.0771 26.5832 17.8824C25.7198 18.7014 24.5548 19.1109 23.0883 19.1109ZM22.9238 12.8254C23.4035 12.8254 23.8489 12.6957 24.2601 12.4364C24.6713 12.1634 25.0002 11.788 25.2469 11.3103C25.4936 10.8326 25.617 10.3071 25.617 9.73379C25.617 9.14687 25.4936 8.62137 25.2469 8.1573C25.0002 7.67957 24.6713 7.31104 24.2601 7.0517C23.8489 6.77872 23.4035 6.64222 22.9238 6.64222C22.4304 6.64222 21.9781 6.77872 21.567 7.0517C21.1558 7.31104 20.8269 7.67957 20.5802 8.1573C20.3335 8.62137 20.2101 9.14687 20.2101 9.73379C20.2101 10.3207 20.3335 10.853 20.5802 11.3308C20.8269 11.7948 21.1558 12.1634 21.567 12.4364C21.9781 12.6957 22.4304 12.8254 22.9238 12.8254Z" fill="currentColor"></path>
+              <path d="M39.3721 9.81569C39.3721 10.2525 39.331 10.621 39.2487 10.9213H31.5394C31.6764 11.6993 32.0054 12.3135 32.5262 12.7639C33.047 13.2144 33.6774 13.4396 34.4175 13.4396C34.9521 13.4396 35.4043 13.3372 35.7744 13.1325C36.1444 12.9277 36.4391 12.6684 36.6584 12.3545H39.002C38.7965 12.8731 38.4744 13.3713 38.0358 13.8491C37.6109 14.3268 37.0833 14.7158 36.4528 15.0161C35.8361 15.3164 35.1645 15.4665 34.4381 15.4665C33.4924 15.4665 32.6221 15.2276 31.8272 14.7499C31.046 14.2722 30.4224 13.6238 29.9564 12.8049C29.5041 11.9723 29.278 11.051 29.278 10.0409C29.278 9.0445 29.511 8.13682 29.9769 7.31787C30.4429 6.48526 31.0665 5.83009 31.8477 5.35236C32.6427 4.86099 33.4993 4.6153 34.4175 4.6153C35.3358 4.6153 36.1718 4.84734 36.9257 5.31142C37.6795 5.76184 38.2757 6.38289 38.7142 7.17455C39.1528 7.96621 39.3721 8.84659 39.3721 9.81569ZM34.4175 6.64222C33.7048 6.64222 33.0812 6.88109 32.5467 7.35881C32.0122 7.82289 31.6764 8.44393 31.5394 9.22194H37.1724C37.049 8.45758 36.7338 7.83654 36.2267 7.35881C35.7196 6.88109 35.1165 6.64222 34.4175 6.64222Z" fill="currentColor"></path>
+              <path d="M44.5282 15.4665C43.5551 15.4665 42.7671 15.1457 42.164 14.5042C41.561 13.8627 41.2594 12.9823 41.2594 11.8631V6.88791H39.5531V4.98383H40.2932C40.7044 4.98383 41.0127 4.88146 41.2183 4.67672C41.4376 4.45833 41.5473 4.15122 41.5473 3.75539V2.19937H43.5003V4.86099H45.7617V6.88791H43.5003V11.6788C43.5003 12.2384 43.6374 12.6616 43.9115 12.9482C44.1856 13.2212 44.5625 13.3577 45.0422 13.3577C45.33 13.3577 45.5698 13.3099 45.7617 13.2144V15.2618C45.4054 15.3983 44.9942 15.4665 44.5282 15.4665Z" fill="currentColor"></path>
+              <path d="M47.274 15.2208V0.889038H49.5355V6.00753H49.6383C49.8575 5.6936 50.2276 5.38649 50.7484 5.0862C51.2692 4.77227 51.8654 4.6153 52.537 4.6153C53.3045 4.6153 53.9898 4.80639 54.5928 5.18857C55.2096 5.5571 55.6893 6.0826 56.0319 6.76507C56.3882 7.44753 56.5664 8.23919 56.5664 9.14005V15.2208H54.3256V9.30384C54.3256 8.53948 54.0994 7.91843 53.6471 7.44071C53.2085 6.94933 52.6398 6.70365 51.9408 6.70365C51.2281 6.70365 50.6456 6.94933 50.1933 7.44071C49.7547 7.91843 49.5355 8.53948 49.5355 9.30384V15.2208H47.274Z" fill="currentColor"></path>
+              <path d="M67.9779 9.81569C67.9779 10.2525 67.9368 10.621 67.8545 10.9213H60.1452C60.2822 11.6993 60.6112 12.3135 61.132 12.7639C61.6528 13.2144 62.2832 13.4396 63.0233 13.4396C63.5578 13.4396 64.0101 13.3372 64.3802 13.1325C64.7502 12.9277 65.0449 12.6684 65.2642 12.3545H67.6078C67.4023 12.8731 67.0802 13.3713 66.6416 13.8491C66.2167 14.3268 65.6891 14.7158 65.0586 15.0161C64.4419 15.3164 63.7703 15.4665 63.0439 15.4665C62.0982 15.4665 61.2279 15.2276 60.433 14.7499C59.6518 14.2722 59.0282 13.6238 58.5622 12.8049C58.1099 11.9723 57.8837 11.051 57.8837 10.0409C57.8837 9.0445 58.1167 8.13682 58.5827 7.31787C59.0487 6.48526 59.6723 5.83009 60.4535 5.35236C61.2485 4.86099 62.1051 4.6153 63.0233 4.6153C63.9416 4.6153 64.7776 4.84734 65.5315 5.31142C66.2853 5.76184 66.8814 6.38289 67.32 7.17455C67.7586 7.96621 67.9779 8.84659 67.9779 9.81569ZM63.0233 6.64222C62.3106 6.64222 61.687 6.88109 61.1525 7.35881C60.618 7.82289 60.2822 8.44393 60.1452 9.22194H65.7781C65.6548 8.45758 65.3396 7.83654 64.8325 7.35881C64.3254 6.88109 63.7223 6.64222 63.0233 6.64222Z" fill="currentColor"></path>
+              <path d="M69.367 15.2208V4.86099H71.0528L71.464 6.00753H71.5668C71.7861 5.6936 72.1218 5.38649 72.5741 5.0862C73.0264 4.77227 73.5472 4.6153 74.1366 4.6153C74.4792 4.6153 74.767 4.6426 75 4.6972V6.94933C74.7396 6.89474 74.4312 6.86744 74.0749 6.86744C73.3485 6.86744 72.7591 7.09948 72.3069 7.56355C71.8546 8.02763 71.6284 8.66915 71.6284 9.48811V15.2208H69.367Z" fill="currentColor"></path>
+            </svg></div>
+        </a>
+        <nav role="navigation" class="navbar_menu style-auto-color w-nav-menu">
+          <a href="index.html" class="navbar_link w-nav-link">Bento</a>
+          <a href="teach.html" class="navbar_link w-nav-link">Learn</a>
+          <a href="#" class="navbar_link w-nav-link">Shop</a>
+          <div data-hover="true" data-delay="200" data-w-id="378a709a-379b-9169-c776-eea928e36ea3" class="navbar_menu-dropdown w-dropdown">
+            <div class="navbar_dropdown-toggle w-dropdown-toggle">
+              <div>Inspo</div>
+              <div class="navbar_dropdown-chevron w-embed"><svg width=" 100%" height=" 100%" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M2.55806 6.29544C2.46043 6.19781 2.46043 6.03952 2.55806 5.94189L3.44195 5.058C3.53958 4.96037 3.69787 4.96037 3.7955 5.058L8.00001 9.26251L12.2045 5.058C12.3021 4.96037 12.4604 4.96037 12.5581 5.058L13.4419 5.94189C13.5396 6.03952 13.5396 6.19781 13.4419 6.29544L8.17678 11.5606C8.07915 11.6582 7.92086 11.6582 7.82323 11.5606L2.55806 6.29544Z" fill="currentColor"></path>
+                </svg></div>
+            </div>
+            <nav class="navbar_dropdown-list style-auto-color w-dropdown-list">
+              <a href="websites.html" class="navbar_dropdown-link w-dropdown-link">Websites</a>
+              <a href="fonts.html" class="navbar_dropdown-link w-dropdown-link">Fonts</a>
+              <div class="w-dyn-list">
+                <div role="list" class="w-dyn-items">
+                  <div role="listitem" class="w-dyn-item">
+                    <a href="#" class="navbar_dropdown-link w-dropdown-link"></a>
+                  </div>
+                </div>
+                <div class="w-dyn-empty">
+                  <div>No items found.</div>
+                </div>
+              </div>
+            </nav>
+          </div>
+          <div class="navbar_menu-buttons">
+            <a href="#" class="navbar_button w-button">Join Together</a>
+          </div>
+        </nav>
+        <div class="navbar_menu-button w-nav-button">
+          <div class="menu-icon1">
+            <div class="menu-icon1_line-top"></div>
+            <div class="menu-icon1_line-middle">
+              <div class="menu-icon_line-middle-inner"></div>
+            </div>
+            <div class="menu-icon1_line-bottom"></div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar_bottom-line"></div>
+      <div class="pageloader_component">
+        <div style-auto-bg="" class="pageloader_overlay style-auto-color">
+          <div class="pageloader_text-block">
+            <div>Together</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main class="main-wrapper">
+      <header class="section_gallery-header">
+        <div class="padding-global">
+          <div class="container-full">
+            <div class="gallery-header_component">
+              <div class="gallery-header_top-wrapper">
+                <div class="breadcrumb_component">
+                  <a href="index.html" class="breadcrumb_link">Home</a>
+                  <div class="breadcrumb_link">/</div>
+                  <a href="fonts-copy.html" aria-current="page" class="breadcrumb_link w--current">Gems</a>
+                </div>
+                <div class="gallery-header_heading-wrapper">
+                  <h1 class="heading-style-h1">Gems we Love</h1>
+                </div>
+                <div class="gallery-header_category-list-wrapper w-dyn-list">
+                  <div role="list" class="gallery-header_category-list w-dyn-items">
+                    <div role="listitem" class="gallery-header_item w-dyn-item">
+                      <a href="#" class="gallery-header_category-item-box w-inline-block">
+                        <div></div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="w-dyn-empty">
+                    <div>No items found.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="gallery-listing_component">
+                <div class="gallery-listing_list-wrapper w-dyn-list">
+                  <div masonry="grid" r-masonry-layout="1" r-masonry-column-min="300" r-masonry-gap="24" role="list" class="gallery-listing_list w-dyn-items">
+                    <div masonry="grid-item" role="listitem" class="gallery-listing_item w-dyn-item">
+                      <div class="gallery-listing_box">
+                        <a href="#" class="gallery-listing_image-wrapper w-inline-block"><img alt="" loading="lazy" src="" class="gallery-listing_image"></a>
+                        <div class="gallery-listing_info-wrapper">
+                          <div class="gallery-listing_info">
+                            <a href="#" class="gallery-listing_name-wrapper w-inline-block">
+                              <div class="gallery-listing_name"></div>
+                            </a>
+                            <a href="#" class="gallery-listing_category-text w-inline-block">
+                              <div></div>
+                            </a>
+                          </div>
+                          <a href="#" class="gallery-listing_button w-inline-block">
+                            <div class="gallery-listing_arrow-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 24 24" fill="none" preserveaspectratio="xMidYMid meet" aria-hidden="true" role="img">
+                                <path d="M19.125 6V15.75C19.125 16.0484 19.0064 16.3345 18.7955 16.5455C18.5845 16.7565 18.2983 16.875 18 16.875C17.7016 16.875 17.4154 16.7565 17.2045 16.5455C16.9935 16.3345 16.875 16.0484 16.875 15.75V8.71875L6.7959 18.7959C6.58455 19.0073 6.29791 19.126 5.99902 19.126C5.70014 19.126 5.41349 19.0073 5.20215 18.7959C4.9908 18.5846 4.87207 18.2979 4.87207 17.9991C4.87207 17.7002 4.9908 17.4135 5.20215 17.2022L15.2812 7.125H8.24996C7.95159 7.125 7.66544 7.00647 7.45446 6.7955C7.24349 6.58452 7.12496 6.29837 7.12496 6C7.12496 5.70163 7.24349 5.41548 7.45446 5.2045C7.66544 4.99353 7.95159 4.875 8.24996 4.875H18C18.2983 4.875 18.5845 4.99353 18.7955 5.2045C19.0064 5.41548 19.125 5.70163 19.125 6Z" fill="currentColor"></path>
+                              </svg></div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w-dyn-empty">
+                    <div>No items found.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+    </main>
+  </div>
+  <footer class="footer_component style-auto-color">
+    <div class="padding-global">
+      <div class="container-large">
+        <div id="w-node-_677bc7a8-300f-d3b0-3d66-9ece3a5455c3-3a5455c0" class="footer_top-wrapper">
+          <div id="w-node-_677bc7a8-300f-d3b0-3d66-9ece3a5455c4-3a5455c0" class="footer_left-wrapper">
+            <a href="#" id="w-node-_677bc7a8-300f-d3b0-3d66-9ece3a5455c5-3a5455c0" class="footer_logo-link w-nav-brand">
+              <div class="footer_logo">together</div>
+            </a>
+            <div class="footer_link-list-wrapper">
+              <div class="footer_link-list">
+                <a href="#" class="footer_link">Get our Bento</a>
+                <a href="websites.html" class="footer_link">Websites we Love</a>
+                <a href="fonts.html" class="footer_link">Fonts we like</a>
+                <a id="w-node-_677bc7a8-300f-d3b0-3d66-9ece3a5455d0-3a5455c0" href="#" class="footer_link">Twitter</a>
+                <a href="#" class="footer_link">Join Whatsapp</a>
+                <a id="w-node-_677bc7a8-300f-d3b0-3d66-9ece3a5455d4-3a5455c0" href="#" class="footer_link">Get Musho</a>
+              </div>
+              <a href="#" class="button is-secondary max-width-full w-button">Join Join Join!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=656b54ed82c62b584cca65ee" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="js/webflow.js" type="text/javascript"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  <!--  <script src="https://tools.refokus.com/masonry-layout/bundle.v1.0.0.js"></script>  -->
+  <script>
+$(document).ready(function() {
+  setTimeout(function() {
+    $('[masonry="grid"]').isotope({
+      // options
+      itemSelector: '[masonry="grid-item"]',
+      layoutMode: 'fitRows'
+    });
+  }, 100); // Delay of 100 milliseconds
+});
+</script>
+</body>
+</html>

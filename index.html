@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calendar</title>
+<style>
+  .calendar {
+    width: 300px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+  .calendar table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .calendar th, .calendar td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  .calendar th {
+    background-color: #f2f2f2;
+  }
+  .calendar td {
+    cursor: pointer;
+  }
+  .selected {
+    background-color: #007bff;
+    color: #fff;
+  }
+</style>
+</head>
+<body>
+
+<div class="calendar">
+  <table>
+    <thead>
+      <tr>
+        <th colspan="7">Select a Date</th>
+      </tr>
+      <tr>
+        <th>Sun</th>
+        <th>Mon</th>
+        <th>Tue</th>
+        <th>Wed</th>
+        <th>Thu</th>
+        <th>Fri</th>
+        <th>Sat</th>
+      </tr>
+    </thead>
+    <tbody id="calendar-body">
+    </tbody>
+  </table>
+</div>
+
+<script>
+  const calendarBody = document.getElementById('calendar-body');
+  const today = new Date();
+  let selectedDate;
+
+  function renderCalendar() {
+    calendarBody.innerHTML = '';
+    const firstDayOfMonth = new Date(today.getFullYear(), today.getMonth(), 1);
+    const lastDayOfMonth = new Date(today.getFullYear(), today.getMonth() + 1, 0);
+    const daysInMonth = lastDayOfMonth.getDate();
+
+    let date = 1;
+    for (let i = 0; i < 6; i++) {
+      const row = document.createElement('tr');
+      for (let j = 0; j < 7; j++) {
+        if (i === 0 && j < firstDayOfMonth.getDay()) {
+          const cell = document.createElement('td');
+          row.appendChild(cell);
+        } else if (date > daysInMonth) {
+          break;
+        } else {
+          const cell = document.createElement('td');
+          cell.textContent = date;
+          if (selectedDate && selectedDate.getDate() === date) {
+            cell.classList.add('selected');
+          }
+          cell.addEventListener('click', () => selectDate(date));
+          row.appendChild(cell);
+          date++;
+        }
+      }
+      calendarBody.appendChild(row);
+    }
+  }
+
+  function selectDate(date) {
+    const month = today.getMonth() + 1;
+    const year = today.getFullYear();
+    selectedDate = new Date(`${year}-${month}-${date}`);
+    renderCalendar();
+    updateLink();
+  }
+
+  function updateLink() {
+    const month = selectedDate.getMonth() + 1;
+    const year = selectedDate.getFullYear();
+    const date = selectedDate.getDate();
+    const link = `https://example.com/?date=${year}-${month}-${date}`;
+    console.log(link); // Update the link wherever you need it
+  }
+
+  renderCalendar();
+</script>
+
+</body>
+</html>
